@@ -1968,12 +1968,12 @@ while True:
 							description= boss_information[0],
 							color=0x0000ff
 							)
-					embed.add_field(
+					"""embed.add_field(
 							name="----- 미예약 보스 -----",
 							value= tmp_boss_information[0],
 							inline = False
 							)
-					
+					"""
 					await client.get_channel(channel).send( embed=embed, tts=False)
 				else : 
 					###########################일반보스출력
@@ -2001,7 +2001,7 @@ while True:
 								)
 						await client.get_channel(channel).send( embed=embed, tts=False)
 					###########################미예약보스출력
-					if len(tmp_boss_information[0]) != 0:
+					"""if len(tmp_boss_information[0]) != 0:
 						if len(tmp_boss_information) == 1 :
 							tmp_boss_information[0] = "```fix\n" + tmp_boss_information[0][:len(tmp_boss_information[0])-1] + "\n```"
 						else:
@@ -2030,7 +2030,7 @@ while True:
 								color=0x0000ff
 								)
 						await client.get_channel(channel).send( embed=embed, tts=False)
-
+"""
 				await dbSave()
 				await kill_list_Save()
 
@@ -2172,7 +2172,7 @@ while True:
 					await client.get_channel(channel).send( embed=embed, tts=False)
 
 				###########################미예약보스출력
-				if len(tmp_boss_information[0]) != 0:
+				"""if len(tmp_boss_information[0]) != 0:
 					if len(tmp_boss_information) == 1 :
 						tmp_boss_information[0] = "```fix\n" + tmp_boss_information[0][:len(tmp_boss_information[0])-1] + "\n```"
 					else:
@@ -2201,7 +2201,7 @@ while True:
 							color=0x0000ff
 							)
 					await client.get_channel(channel).send( embed=embed, tts=False)
-
+"""
 				await dbSave()
 				await kill_list_Save()
 
